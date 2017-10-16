@@ -63,7 +63,7 @@ namespace WordReverser
             foreach (string value in array)
             {
                 builder.Append(value);
-                builder.Append('.');
+                builder.Append(' ');
             }
             return builder.ToString();
         }
