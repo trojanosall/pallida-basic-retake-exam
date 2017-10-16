@@ -32,7 +32,7 @@ The application is accepted if:
 
 ###  What is inheritance? When would you use it? [2p]
 #### Your answer:
-[We use inherintance wit related to class in C#. The inheritance provide us possibility to determine a class in terms of another class. It makes easier to create and maintain the program. The inheritance also gives an opportunity to reuse the code functionality and speeds up implementation time.]
+[We use inherintance wit related to class in C#. The inheritance provide us possibility to determine a class in terms of another class. It makes easier to create and maintain the program. The inheritance also gives an opportunity to reuse the code functionality and speeds up implementation time.Inheritance is important base of object-oriented programming. We separate two group: Base calss - the class whose members are inherited, Derived class: that inherits from base class. We use inheritance when we wants to use some part of the base class in the derived class.]
 
 
 ### Name each building block of a method! [2p]
@@ -40,12 +40,20 @@ The application is accepted if:
 ![anatomy](anatomy/AnatomyJavaCs.png)
 
 #### Your answer:
-[add your answer here]   
-1:   
-2:   
-3:   
-4:   
-5:   
-6:   
-7:   
-8:
+[1: Method signature   
+2: Return value type  
+3: Method name  
+4: Type of the method parameters  
+5: Name of the method parameters  
+6: Method arguments  
+7: Block of statements  
+8: REturn value
+]   
+1: Method signature   
+2: Return value type  
+3: Method name  
+4: Type of the method parameters  
+5: Name of the method parameters  
+6: Method arguments  
+7: Block of statements  
+8: REturn value
