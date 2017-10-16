@@ -32,7 +32,7 @@ The application is accepted if:
 
 ###  What is inheritance? When would you use it? [2p]
 #### Your answer:
-[add your answer here]
+[We use inherintance wit related to class in C#. The inheritance provide us possibility to determine a class in terms of another class. It makes easier to create and maintain the program. The inheritance also gives an opportunity to reuse the code functionality and speeds up implementation time.]
 
 
 ### Name each building block of a method! [2p]
