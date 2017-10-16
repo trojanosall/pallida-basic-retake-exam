@@ -25,6 +25,8 @@ namespace WordReverser
             string reversedWords = WordReverser(sentence);
 
             Console.WriteLine(reversedWords);
+
+            Console.ReadKey();
         }
 
         public static string WordReverser(string sentenceForFuncion)
