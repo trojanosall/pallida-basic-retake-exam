@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace PokeBag
 {
-    class Pikachu
+    public class Pikachu : Pokemons
     {
+
+        //public virtual void Speak()
+        //{
+        //    Console.WriteLine("Pika-pika");
+        //}
     }
 }

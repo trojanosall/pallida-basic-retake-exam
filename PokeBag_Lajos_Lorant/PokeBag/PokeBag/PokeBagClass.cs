@@ -8,16 +8,39 @@ namespace PokeBag
 {
     public class PokeBagClass
     {
-        public static List<Pokemons> Pokemons;
+        public static Pikachu Pikachu = new Pikachu();
+        public static Bulbasaur Bulbasaur = new Bulbasaur();
+        public static Charmander Charmander = new Charmander();
+        
+
+
+        public static List<Pokemons> pokemons;
 
         public PokeBagClass()
         {
-            Pokemons = new List<Pokemons>();
+            pokemons = new List<Pokemons>();
         }
 
         public static void Add(Pokemons pokemon)
         {
-            Pokemons.Add(pokemon);
+            pokemons.Add(pokemon);
+        }
+
+        public static void Speak(Pokemons pokemon)
+        {
+            if (pokemon == Pikachu)
+            {
+                Console.WriteLine("Pika-pika");
+            }
+            else if (pokemon == Bulbasaur)
+            {
+                Console.WriteLine("Bulba-saur");
+            }
+            else
+            {
+                Console.WriteLine("Char-char");
+            }
+            
         }
     }
 }

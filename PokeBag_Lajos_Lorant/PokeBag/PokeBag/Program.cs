@@ -20,6 +20,7 @@ namespace PokeBag
             // Create a function that returns the pokemon with the highest strength. In case of equal strengths, it’s your choice which one to return.
             // 
             // Example:
+            var pokeBag = new PokeBagClass();
 
             PokeBagClass.Add(new Pikachu());
             PokeBagClass.Add(new Pikachu());
@@ -27,12 +28,15 @@ namespace PokeBag
             PokeBagClass.Add(new Bulbasaur());
             PokeBagClass.Add(new Charmander());
             // 
-            // Console.WriteLine(pokeBag[0].Speak());
+
+            PokeBagClass.Speak(PokeBagClass.pokemons[0]);
+            //Console.WriteLine(pokeBag[0].Speak());
             // This should print Pika-pika
             // 
             // var stongestPokemon = pokeBag.GetStrongest();
             // Should return the pokemon with the highest strength value
 
+            Console.ReadKey();
         }
     }
 }

@@ -42,6 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bulbasaur.cs" />
+    <Compile Include="Charmander.cs" />
+    <Compile Include="Pikachu.cs" />
+    <Compile Include="PokeBagClass.cs" />
+    <Compile Include="Pokemons.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
