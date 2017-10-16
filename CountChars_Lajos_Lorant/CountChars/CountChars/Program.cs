@@ -30,10 +30,12 @@ namespace CountChars
 
             CountChars(fileName);
 
-            // var countedLetters = CountLetters("da_vinci_code.txt");
-            // Console.WriteLine("0 occured {0} times in the file.", countedLetters["0"]);
-            // Console.WriteLine("1 occured {0} times in the file.", countedLetters["1"]);
-            // Console.WriteLine("x occured {0} times in the file.", countedLetters["x"]);
+            var countedLetters = CountChars(fileName);
+            Console.WriteLine("0 occured {0} times in the file.", countedLetters["0"]);
+            Console.WriteLine("1 occured {0} times in the file.", countedLetters["1"]);
+            Console.WriteLine("x occured {0} times in the file.", countedLetters["x"]);
+
+            Console.ReadKey();
 
         }
 
