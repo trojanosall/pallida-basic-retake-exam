@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Runtime.InteropServices;
 
 namespace CountChars
 {
@@ -41,34 +42,55 @@ namespace CountChars
 
         public static Dictionary<string, int> CountChars(string fileNameForFuncion)
         {
-            string[] myArray = File.ReadAllLines(fileNameForFuncion);
-            Array.Sort(myArray);
 
             var myDictionary = new Dictionary<string, int>();
 
             int numberOfZero = 0, numberOfOne = 0, numberOfX = 0;
 
-            for (int i = 0; i < myArray.Length; i++)
+            if (File.Exists(fileNameForFuncion))
             {
-                if (myArray[i] == "0")
+                using (StreamReader sr = File.OpenText(fileNameForFuncion))
                 {
-                    numberOfZero++;
-                }
-                else if (myArray[i] == "1")
-                {
-                    numberOfOne++;
-                }
-                else
-                {
-                    numberOfX++;
+                    string content = "";
+
+
+
+                    List<string> myContent = new List<string>();
+
+                    while ((content = sr.ReadLine()) != null)
+                    {
+                        myContent.Add(content.ToLower().Replace(" ", ""));
+                    }
+
+                    for (int i = 0; i < myContent.Count; i++)
+                    {
+                        string tempListElement = myContent[i];
+
+                        for (int j = 0; j < tempListElement.Length; j++)
+                        {
+                            if (tempListElement[j] == '0')
+                            {
+                                numberOfZero += 1;
+                            }
+                            else if (tempListElement[j] == '1')
+                            {
+                                numberOfOne += 1;
+                            }
+                            else
+                            {
+                                numberOfX += 1;
+                            }
+                        }
+                    }
                 }
             }
-
             myDictionary.Add("0", numberOfZero);
             myDictionary.Add("1", numberOfOne);
             myDictionary.Add("x", numberOfX);
 
             return myDictionary;
+
         }
+
     }
 }
