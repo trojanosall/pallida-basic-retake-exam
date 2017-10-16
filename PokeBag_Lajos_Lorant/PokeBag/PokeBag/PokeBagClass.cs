@@ -38,7 +38,14 @@ namespace PokeBag
             {
                 Console.WriteLine("Char-char");
             }
-            
         }
+
+        public static void GetStrongest()
+        {
+
+
+        }
+
+
     }
 }
