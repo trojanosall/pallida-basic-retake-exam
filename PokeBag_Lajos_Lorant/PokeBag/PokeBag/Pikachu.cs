@@ -8,10 +8,6 @@ namespace PokeBag
 {
     public class Pikachu : Pokemons
     {
-
-        //public virtual void Speak()
-        //{
-        //    Console.WriteLine("Pika-pika");
-        //}
+        
     }
 }

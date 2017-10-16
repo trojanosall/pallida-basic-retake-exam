@@ -11,10 +11,6 @@ namespace PokeBag
         public Pokemons()
         {
         }
-
-        //public virtual void Speak()
-        //{
-        //    Console.WriteLine("The pokemons their own sound.");
-        //}
+        
     }
 }

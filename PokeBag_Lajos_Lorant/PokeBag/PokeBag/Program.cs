@@ -30,6 +30,7 @@ namespace PokeBag
             // 
 
             PokeBagClass.Speak(PokeBagClass.pokemons[0]);
+
             //Console.WriteLine(pokeBag[0].Speak());
             // This should print Pika-pika
             // 

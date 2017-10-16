@@ -8,10 +8,6 @@ namespace PokeBag
 {
     public class Charmander : Pokemons
     {
-
-        //public virtual void Speak()
-        //{
-        //    Console.WriteLine("Char-char");
-        //}
+        
     }
 }
