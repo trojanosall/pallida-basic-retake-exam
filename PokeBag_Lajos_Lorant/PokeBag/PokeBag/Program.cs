@@ -27,13 +27,11 @@ namespace PokeBag
             PokeBagClass.Add(new Pikachu());
             PokeBagClass.Add(new Bulbasaur());
             PokeBagClass.Add(new Charmander());
-            // 
 
             PokeBagClass.Speak(PokeBagClass.pokemons[0]);
-
-            //Console.WriteLine(pokeBag[0].Speak());
             // This should print Pika-pika
-            // 
+
+            
             // var stongestPokemon = pokeBag.GetStrongest();
             // Should return the pokemon with the highest strength value
 

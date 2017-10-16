@@ -8,12 +8,10 @@ namespace PokeBag
 {
     public class PokeBagClass
     {
+        Random random = new Random();
         public static Pikachu Pikachu = new Pikachu();
         public static Bulbasaur Bulbasaur = new Bulbasaur();
         public static Charmander Charmander = new Charmander();
-        
-
-
         public static List<Pokemons> pokemons;
 
         public PokeBagClass()
