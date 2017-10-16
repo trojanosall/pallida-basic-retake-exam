@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace PokeBag
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             // Create a PokeBag class that can store multiple pokemons from different types. Add 5 pokemons to your PokeBag.
             // There are 3 kind of pomenons:
@@ -20,18 +20,19 @@ namespace PokeBag
             // Create a function that returns the pokemon with the highest strength. In case of equal strengths, it’s your choice which one to return.
             // 
             // Example:
-            // pokeBag.Add(new Pikachu());
-            // pokeBag.Add(new Pikachu());
-            // pokeBag.Add(new Pikachu());
-            // pokeBag.Add(new Bulbasaur());
-            // pokeBag.Add(new Charmander());
+
+            PokeBagClass.Add(new Pikachu());
+            PokeBagClass.Add(new Pikachu());
+            PokeBagClass.Add(new Pikachu());
+            PokeBagClass.Add(new Bulbasaur());
+            PokeBagClass.Add(new Charmander());
             // 
             // Console.WriteLine(pokeBag[0].Speak());
             // This should print Pika-pika
             // 
             // var stongestPokemon = pokeBag.GetStrongest();
             // Should return the pokemon with the highest strength value
-            
+
         }
     }
 }

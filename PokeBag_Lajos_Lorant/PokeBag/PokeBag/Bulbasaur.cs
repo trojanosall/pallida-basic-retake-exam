@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PokeBag
 {
-    class Bubasaur : Pokemons
+    public class Bubasaur : Pokemons
     {
     }
 }

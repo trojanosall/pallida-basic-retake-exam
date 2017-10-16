@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace PokeBag
 {
-    class Pokemons
+    public class Pokemons
     {
+        public Pokemons()
+        {
+        }
     }
 }
