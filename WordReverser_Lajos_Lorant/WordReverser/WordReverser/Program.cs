@@ -23,17 +23,47 @@ namespace WordReverser
             string sentence = "lleW ,enod taht saw ton taht drah";
 
             string reversedWords = WordReverser(sentence);
+
+            Console.WriteLine(reversedWords);
         }
 
         public static string WordReverser(string sentenceForFuncion)
         {
-            string[] words = sentenceForFuncion.Split(' ');
-            Array.Reverse(words);
-            return string.Join(" ", words);
+            string[] wordsArray = sentenceForFuncion.Split(' ');
+            string[] newWordsArray = new string [wordsArray.Length];
+            
 
+            for (int i = 0; i < wordsArray.Length; i++)
+            {
+                string tempWord = wordsArray[i];
 
+                newWordsArray[i] = Reverse(tempWord);
+            }
 
+            string reversedSentece = ConvertStringArrayToString(newWordsArray);
             return reversedSentece;
+        }
+
+        public static string Reverse(string text)
+        {
+            char[] cArray = text.ToCharArray();
+            string reverse = String.Empty;
+            for (int i = cArray.Length - 1; i > -1; i--)
+            {
+                reverse += cArray[i];
+            }
+            return reverse;
+        }
+
+        public static string ConvertStringArrayToString(string[] array)
+        {
+            StringBuilder builder = new StringBuilder();
+            foreach (string value in array)
+            {
+                builder.Append(value);
+                builder.Append('.');
+            }
+            return builder.ToString();
         }
 
     }
